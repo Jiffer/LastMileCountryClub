@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Pacifico&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-    <h1>Last Mile Country Club</h1>
-</header>
+        <h1>Last Mile Country Club</h1>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#media">Photos & Videos</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#media">Photos & Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section id="about">
         <h2>About</h2>
@@ -34,11 +33,26 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: JifferH@gmail.com</p>
+        <p>Email: your@email.com</p>
     </section>
 
     <footer>
         <p>&copy; 2025 Last Mile Country Club</p>
     </footer>
+
+    <script>
+    function flickerNeon() {
+        const h1 = document.querySelector('header h1');
+        h1.classList.add('neon-on');
+        
+        setTimeout(() => {
+            h1.classList.remove('neon-on');
+            const nextFlicker = 7000 + Math.random() * 6000; // 7-13 seconds
+            setTimeout(flickerNeon, nextFlicker);
+        }, 300); // burst duration
+    }
+
+    setTimeout(flickerNeon, 5000); // first flicker after 5 seconds
+    </script>
 </body>
 </html>

@@ -40,27 +40,22 @@ header::before {
 header h1 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    text-shadow: 3px 3px 12px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+    color: #665500;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 1;
-    animation: neonFlicker 4s infinite;
+    transition: all 0.1s ease;
 }
 
-@keyframes neonFlicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        color: #fff;
-        text-shadow: 
-            0 0 10px #ffdd00,
-            0 0 20px #ffdd00,
-            0 0 40px #ffdd00,
-            0 0 80px #ffdd00;
-    }
-    20%, 24%, 55% {
-        color: #fff;
-        text-shadow: none;
-    }
+header h1.neon-on {
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ffdd00,
+        0 0 20px #ffdd00,
+        0 0 40px #ffdd00,
+        0 0 80px #ffdd00;
 }
-
 
 nav {
     background: #222;
