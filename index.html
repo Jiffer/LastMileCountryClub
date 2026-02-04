@@ -41,19 +41,45 @@
     </footer>
 
     <script>
+const h1 = document.querySelector('header h1');
+let isOn = true;
+
+function updateGlow() {
+    if (!isOn) return;
+    
+    const time = Date.now() / 1000;
+    const wave1 = Math.sin(time * (2 * Math.PI / 12)); // 12 second cycle
+    const wave2 = Math.sin(time * (2 * Math.PI / 7));  // 7 second cycle
+    const combined = (wave1 + wave2) / 2; // -1 to 1
+    const glow = 30 + combined * 20; // ranges from 10 to 50
+    const outerGlow = 60 + combined * 30; // ranges from 30 to 90
+    
+    h1.style.textShadow = `
+        0 0 5px #ff6600,
+        0 0 ${glow}px #ff6600,
+        0 0 ${outerGlow}px #ff4500
+    `;
+    
+    requestAnimationFrame(updateGlow);
+}
+
 function flickerNeon() {
-    const h1 = document.querySelector('header h1');
+    isOn = false;
     h1.classList.add('neon-off');
+    h1.style.textShadow = '';
     
     const offDuration = 2000 + Math.random() * 1000; // 2-3 seconds off
     
     setTimeout(() => {
         h1.classList.remove('neon-off');
+        isOn = true;
+        updateGlow();
         const nextFlicker = 7000 + Math.random() * 6000; // 7-13 seconds until next
         setTimeout(flickerNeon, nextFlicker);
     }, offDuration);
 }
 
+updateGlow();
 setTimeout(flickerNeon, 5000);
 </script>
 </body>
