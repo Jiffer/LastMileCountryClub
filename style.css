@@ -13,7 +13,7 @@ body {
 
 /* Header and navigation */
 header {
-    background-image: url('/images/header/pedalHeader.jpg');
+    background-image: url('images/header/pedalHeader.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
