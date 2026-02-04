@@ -37,7 +37,7 @@ header::before {
     background: rgba(80, 50, 20, 0.4);
 }
 
-hheader h1 {
+header h1 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
     color: #ffa500;
@@ -48,10 +48,13 @@ hheader h1 {
         0 0 15px #d65600,
         0 0 30px #d63900;
 }
-
 header h1.neon-off {
-    color: #663300;
-    text-shadow: none;
+    color: #3d2815;
+    text-shadow: 
+        -1px -1px 0 #b8860b,
+        1px -1px 0 #b8860b,
+        -1px 1px 0 #b8860b,
+        1px 1px 0 #b8860b;
 }
 
 nav {
