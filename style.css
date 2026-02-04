@@ -37,25 +37,23 @@ header::before {
     background: rgba(80, 50, 20, 0.4);
 }
 
-header h1 {
+hheader h1 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    color: #ffdd00;
-    -webkit-text-stroke: 1px #c0c0c0;
-    text-shadow: 
-        0 0 10px #ffdd00,
-        0 0 20px #ffdd00,
-        0 0 40px #ffdd00,
-        0 0 80px #ffdd00;
+    color: #ffa500;
     position: relative;
     z-index: 1;
+    text-shadow: 
+        0 0 5px #b24904,
+        0 0 15px #d65600,
+        0 0 30px #d63900;
 }
 
 header h1.neon-off {
-    color: #555555;
-    -webkit-text-stroke: 1px #999;
+    color: #663300;
     text-shadow: none;
 }
+
 nav {
     background: #222;
     padding: 1rem;
@@ -71,10 +69,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffdd00;
-    text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00, 0 0 40px #ffdd00;
+    color: #ffa500;
+    text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
 }
-
 /* Sections */
 section {
     padding: 3rem 2rem;
