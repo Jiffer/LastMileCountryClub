@@ -34,7 +34,8 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(80, 50, 20, 0.4);
+    background: rgba(100, 60, 60, 0.3) 
+    /* background filter */
 }
 
 header h1 {
@@ -56,7 +57,7 @@ nav a {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.2rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', monospace;
 }
 
 nav a:hover {
@@ -73,7 +74,7 @@ section {
 section h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', monospace;
 }
 
 /* Footer */
