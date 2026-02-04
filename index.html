@@ -45,14 +45,16 @@ function flickerNeon() {
     const h1 = document.querySelector('header h1');
     h1.classList.add('neon-off');
     
+    const offDuration = 2000 + Math.random() * 1000; // 2-3 seconds off
+    
     setTimeout(() => {
         h1.classList.remove('neon-off');
-        const nextFlicker = 7000 + Math.random() * 6000; // 7-13 seconds
+        const nextFlicker = 7000 + Math.random() * 6000; // 7-13 seconds until next
         setTimeout(flickerNeon, nextFlicker);
-    }, 150); // off duration
+    }, offDuration);
 }
 
-setTimeout(flickerNeon, 5000); // first flicker after 5 seconds
+setTimeout(flickerNeon, 5000);
 </script>
 </body>
 </html>

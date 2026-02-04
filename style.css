@@ -40,8 +40,8 @@ header::before {
 header h1 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    color: #fff;
-    -webkit-text-stroke: 1px #000;
+    color: #ffdd00;
+    -webkit-text-stroke: 1px #c0c0c0;
     text-shadow: 
         0 0 10px #ffdd00,
         0 0 20px #ffdd00,
@@ -49,14 +49,13 @@ header h1 {
         0 0 80px #ffdd00;
     position: relative;
     z-index: 1;
-    transition: all 0.1s ease;
 }
 
 header h1.neon-off {
-    color: #888;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+    color: #555555;
+    -webkit-text-stroke: 1px #999;
+    text-shadow: none;
 }
-
 nav {
     background: #222;
     padding: 1rem;
