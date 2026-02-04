@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     color: #333;
 }
 
+/* Header and navigation */
 header {
     background-image: url('images/header/pedalHeader.jpg');
     background-size: cover;
@@ -49,18 +50,17 @@ nav {
     padding: 1rem;
     text-align: center;
 }
+
 nav a {
     color: #ccc;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.2rem;
-    /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Georgia', serif;
+    font-family: 'Special Elite', cursive;
 }
 
 nav a:hover {
-    color: #fff;
-    font-family: 'Dancing Script', cursive;
+    color: #ff0;
 }
 
 /* Sections */
@@ -73,17 +73,7 @@ section {
 section h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-}
-
-/* Shows list */
-#shows ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-#shows li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ddd;
+    font-family: 'Special Elite', cursive;
 }
 
 /* Footer */
