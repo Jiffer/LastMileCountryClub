@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Header and navigation */
 header {
     background-image: url('images/header/pedalHeader.jpg');
     background-size: cover;
@@ -24,15 +23,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(80, 50, 20, 0.4);
 }
 
 header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    background: rgba(110, 66, 9, 0.5);
-    padding: 0.2rem 1.5rem;
-    border-radius: 10px;
     text-shadow: 3px 3px 12px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 1;
 }
 
 nav {
